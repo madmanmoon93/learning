@@ -1,13 +1,4 @@
-# number1 = 999999999999999999999999999999912562211261
-# number2 = 1341412412412412124152152152151252121412412421412
-# product = 0
-# counter = 0
-# while int(number2)>0:
-#     modulo = number2 % 10
-#     product = product + (modulo * number1 * 10**counter)
-#     number2 = int(number2/10)
-#     counter+=1
-# print(product)
+# Multiplication of large numbers
 
 Number1 = 123456789
 Number2 = 987654321
@@ -33,5 +24,7 @@ for j in range(len(ProductList)+len(str(ProductList[-1]))-1):
                 Carry+=1
     ResultList.append(Result)
     exp+=1
+if Carry > 0:
+    ResultList.append(Carry)
 ResultList.reverse()
 print(ResultList)
