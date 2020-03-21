@@ -16,7 +16,7 @@ def birthday(s,d,m):
     if len(s) == m and arraySum(s) == d:
         sharedChocolate = 1
         return sharedChocolate
-    for chocolate in range(len(s)-m):
+    for chocolate in range(len(s)-(m-1)):
         if arraySum(s[chocolate:(m+chocolate)]) == d:
             sharedChocolate+=1
     return sharedChocolate
